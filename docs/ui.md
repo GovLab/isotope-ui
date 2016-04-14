@@ -1,4 +1,9 @@
-# Features
+# Overview
+
+## What is this?
+It's a thing meant to add generic, extensible UI creation on top of [Isotope](http://isotope.metafizzy.co), which is another thing.  It primarily shines when used to create compound boolean filters.
+
+## Features
 
 * Behavior fully configurable from HTML
 * 2-way data binds filter state between the UI and URL search string

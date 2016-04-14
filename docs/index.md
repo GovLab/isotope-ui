@@ -27,3 +27,7 @@ A simple example using a single UI group;
     <a class="b-button b-filter" data-filter="car">car</a>
 </div>
 ```
+
+## Building Stuff
+
+A detailed usage guide is available in the next section, [Using isotope-ui &gt;&gt;](ui/)
