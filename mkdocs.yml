@@ -2,5 +2,6 @@ site_name: isotope-ui - Documentation
 theme: flatly
 repo_url: https://github.com/GovLab/isotope-ui
 pages:
+  - Getting Started: index.md
   - Using isotope-ui: ui.md
   - Changelog: changelog.md
