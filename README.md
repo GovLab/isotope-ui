@@ -12,7 +12,7 @@ Like so ~
 ```html
 <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-<script src="isotope-ui.js"></script>
+<script src="isotope-ui.js"></script> <!-- this is it, THIS. IS. IT. -->
 ```
 
 ## Documentation
