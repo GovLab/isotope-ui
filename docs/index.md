@@ -20,11 +20,13 @@ Like so ~
 A simple example using a single UI group;
 
 ```
-<h3>Single select container</h3>
-<div class="b-filter-ui-container">
-    <a class="b-button b-filter" data-filter="thing">thing</a>
-    <a class="b-button b-filter" data-filter="potato">potato</a>
-    <a class="b-button b-filter" data-filter="car">car</a>
+<div class="b-filter-ui">
+    <h3>Single select container</h3>
+    <div class="b-filter-ui-container">
+        <a class="b-button b-filter" data-filter="thing">thing</a>
+        <a class="b-button b-filter" data-filter="potato">potato</a>
+        <a class="b-button b-filter" data-filter="car">car</a>
+    </div>
 </div>
 ```
 
