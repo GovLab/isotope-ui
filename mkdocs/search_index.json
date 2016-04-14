@@ -2,18 +2,28 @@
     "docs": [
         {
             "location": "/", 
-            "text": "isotope-ui\n\n\nHTML-configurable boolean filter UIs using \nIsotope\n\n\nRequires:\n- JQuery (http://jquery.com/)\n- Isotope (http://isotope.metafizzy.co/)\n\n\nGetting Started\n\n\nCopy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.\n\n\nLike so ~\n\n\nscript src=\n//code.jquery.com/jquery-2.2.3.min.js\n/script\n\n\nscript src=\n//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js\n/script\n\n\nscript src=\nisotope-ui.js\n/script\n \n!-- this is it, THIS. IS. IT. --", 
+            "text": "isotope-ui\n\n\nHTML-configurable boolean filter UIs using \nIsotope\n\n\nRequires:\n\n JQuery (http://jquery.com/)\n\n Isotope (http://isotope.metafizzy.co/)\n\n\nGetting Started\n\n\nCopy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.\n\n\nLike so ~\n\n\nscript src=\n//code.jquery.com/jquery-2.2.3.min.js\n/script\n\n\nscript src=\n//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js\n/script\n\n\nscript src=\nisotope-ui.js\n/script\n \n!-- this is it, THIS. IS. IT. --", 
             "title": "Home"
         }, 
         {
             "location": "/#isotope-ui", 
-            "text": "HTML-configurable boolean filter UIs using  Isotope  Requires:\n- JQuery (http://jquery.com/)\n- Isotope (http://isotope.metafizzy.co/)", 
+            "text": "HTML-configurable boolean filter UIs using  Isotope  Requires:  JQuery (http://jquery.com/)  Isotope (http://isotope.metafizzy.co/)", 
             "title": "isotope-ui"
         }, 
         {
             "location": "/#getting-started", 
             "text": "Copy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.  Like so ~  script src= //code.jquery.com/jquery-2.2.3.min.js /script  script src= //cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js /script  script src= isotope-ui.js /script   !-- this is it, THIS. IS. IT. --", 
             "title": "Getting Started"
+        }, 
+        {
+            "location": "/ui/", 
+            "text": "Building a Filter UI\n\n\nThe structure and behavior of the filter UI is entirely configurable by classing HTML elements.\n\n\nFor example the following code will create a filter group that has multi-select enabled, with a default value that also clears all other selected filters within that group:\n\n\ndiv class=\nb-filter-ui-container js-multi\n\n    \na class=\nb-button b-filter js-default js-clear\n data-filter=\n*\nAll\n/a\n\n    \na class=\nb-button b-filter\n data-filter=\nman\nMan\n/a\n\n    \na class=\nb-button b-filter\n data-filter=\ndog\nDog\n/a\n\n    \na class=\nb-button b-filter\n data-filter=\nbear\nBear\n/a\n\n\n/div", 
+            "title": "Ui"
+        }, 
+        {
+            "location": "/ui/#building-a-filter-ui", 
+            "text": "The structure and behavior of the filter UI is entirely configurable by classing HTML elements.  For example the following code will create a filter group that has multi-select enabled, with a default value that also clears all other selected filters within that group:  div class= b-filter-ui-container js-multi \n     a class= b-button b-filter js-default js-clear  data-filter= * All /a \n     a class= b-button b-filter  data-filter= man Man /a \n     a class= b-button b-filter  data-filter= dog Dog /a \n     a class= b-button b-filter  data-filter= bear Bear /a  /div", 
+            "title": "Building a Filter UI"
         }
     ]
 }

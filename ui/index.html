@@ -7,14 +7,14 @@
         
         
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>isotope-ui - Documentation</title>
+	<title>Ui - isotope-ui - Documentation</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <link href="./css/base.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">isotope-ui - Documentation</a>
+            <a class="navbar-brand" href="..">isotope-ui - Documentation</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -50,14 +50,14 @@
             <ul class="nav navbar-nav">
             
             
-                <li class="active">
-                    <a href=".">Home</a>
+                <li >
+                    <a href="..">Home</a>
                 </li>
             
             
             
-                <li >
-                    <a href="ui/">Ui</a>
+                <li class="active">
+                    <a href="./">Ui</a>
                 </li>
             
             
@@ -70,13 +70,13 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="next" >
+                <li >
+                    <a rel="next" href="..">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="ui/">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -99,26 +99,22 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#isotope-ui">isotope-ui</a></li>
-        
-            <li><a href="#getting-started">Getting Started</a></li>
+        <li class="main active"><a href="#building-a-filter-ui">Building a Filter UI</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="isotope-ui">isotope-ui</h1>
-<p>HTML-configurable boolean filter UIs using <a href="http://isotope.metafizzy.co/">Isotope</a></p>
-<p>Requires:
-<em> JQuery (http://jquery.com/)
-</em> Isotope (http://isotope.metafizzy.co/)</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>Copy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.</p>
-<p>Like so ~</p>
-<pre><code class="html">&lt;script src=&quot;//code.jquery.com/jquery-2.2.3.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;isotope-ui.js&quot;&gt;&lt;/script&gt; &lt;!-- this is it, THIS. IS. IT. --&gt;
+<h1 id="building-a-filter-ui">Building a Filter UI</h1>
+<p>The structure and behavior of the filter UI is entirely configurable by classing HTML elements.</p>
+<p>For example the following code will create a filter group that has multi-select enabled, with a default value that also clears all other selected filters within that group:</p>
+<pre><code class="html">&lt;div class=&quot;b-filter-ui-container js-multi&quot;&gt;
+    &lt;a class=&quot;b-button b-filter js-default js-clear&quot; data-filter=&quot;*&quot;&gt;All&lt;/a&gt;
+    &lt;a class=&quot;b-button b-filter&quot; data-filter=&quot;man&quot;&gt;Man&lt;/a&gt;
+    &lt;a class=&quot;b-button b-filter&quot; data-filter=&quot;dog&quot;&gt;Dog&lt;/a&gt;
+    &lt;a class=&quot;b-button b-filter&quot; data-filter=&quot;bear&quot;&gt;Bear&lt;/a&gt;
+&lt;/div&gt;
 </code></pre></div>
         </div>
 
@@ -128,12 +124,12 @@
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
