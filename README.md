@@ -20,7 +20,7 @@ Check the [example](example.html) for basic usage.
 ## Documentation
 Documentation is created using [MkDocs](http://www.mkdocs.org/), which is a cool thing.
 
-Available [here](https://github.com/GovLab/isotope-ui).
+**Available [here](https://github.com/GovLab/isotope-ui).**
 
 ### Editing / Deploying the Documentation
 
