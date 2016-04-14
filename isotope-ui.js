@@ -35,7 +35,7 @@ $(function() {
     },
 
     isotopeDefaults = {                     // default options for isotope. these can be overwritten with corresponding jsOptions
-        itemSelector    : '.b-result-item',
+        itemSelector    : '.b-result',
         layoutMode      : 'fitRows',
         sortBy          : 'category'
     },
