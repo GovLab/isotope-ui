@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>isotope-ui UI Example</title></head>
+<body>
+<style type="text/css">
+.b-card {
+    background-color: #efe;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px;
+}
+.b-filter:not(.js-change).m-active {
+    background-color: #faa;
+}
+.b-filter-ui {
+    background-color: #fee;
+}
+</style>
+
+<div class="b-filter-ui js-and">
+    <h2>Example Filter UI</h2>
+    <select id="andor">
+        <option value="and">AND</option>
+        <option value="or">OR</option>
+    </select>
+    <h3>Multi select container</h3>
+    <div class="b-filter-ui-container js-multi">
+        <a class="b-button b-filter js-default js-clear-all" data-filter="*">all</a>
+        <a class="b-button b-filter" data-filter="man">man</a>
+        <a class="b-button b-filter" data-filter="dog">dog</a>
+        <a class="b-button b-filter" data-filter="bear">bear</a>
+    </div>
+    <h3>Single select container</h3>
+    <div class="b-filter-ui-container">
+        <a class="b-button b-filter" data-filter="thing">thing</a>
+        <a class="b-button b-filter" data-filter="potato">potato</a>
+        <a class="b-button b-filter" data-filter="car">car</a>
+    </div>
+    <h3>No container</h3>
+    <a class="b-button b-filter" data-filter="creature">creature</a>
+    <a class="b-button b-filter" data-filter="alien">alien</a>
+    <a class="b-button b-filter" data-filter="public-prosecutor">public prosecutor</a>
+    <h3>On change</h3>
+    <select class="b-filter js-change">
+        <option data-filter="* *">* *</option>
+        <option data-filter="yo">yo</option>
+        <option data-filter="hey">hey</option>
+        <option data-filter="pancake">pancake</option>
+        <option data-filter="squid">squid</option>
+    </select>
+</div>
+<div class="b-isotope" data-filter="man">
+    <div class="b-card b-result yo man creature">yo man creature</div>
+    <div class="b-card b-result yo dog">yo dog</div>
+    <div class="b-card b-result hey man alien">hey man alien</div>
+    <div class="b-card b-result hey dog">hey dog</div>
+    <div class="b-card b-result hey dog potato">hey dog potato</div>
+    <div class="b-card b-result hey potato thing">hey potato thing</div>
+    <div class="b-card b-result hey man alien pancake">hey man alien pancake</div>
+    <div class="b-card b-result hey dog squid">hey dog squid</div>
+    <div class="b-card b-result yo pancake alien creature">yo pancake alien creature</div>
+    <div class="b-card b-result yo alien public-prosecutor">yo alien public prosecutor</div>
+    <div class="b-card b-result hey squid car creature">hey squid car creature</div>
+    <div class="b-card b-result alien potato bear">alien potato bear</div>
+</div>
+<script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="isotope-ui.js"></script>
+<script>
+$(function() {
+    $('#andor').on('change', function() {
+        if ($(this).val() === 'and') {
+            $(this).closest('.b-filter-ui').removeClass('js-or');
+            $(this).closest('.b-filter-ui').addClass('js-and');
+        } else {
+            $(this).closest('.b-filter-ui').removeClass('js-and');
+            $(this).closest('.b-filter-ui').addClass('js-or');
+        }
+    });
+});
+</script>
+</body>
+</html>
