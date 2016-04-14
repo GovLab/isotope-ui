@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "isotope-ui\n\n\nHTML-configurable boolean filter UIs using \nIsotope\n\n\nRequires:\n\n JQuery (http://jquery.com/)\n\n Isotope (http://isotope.metafizzy.co/)\n\n\nGetting Started\n\n\nCopy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.\n\n\nLike so ~\n\n\nscript src=\n//code.jquery.com/jquery-2.2.3.min.js\n/script\n\n\nscript src=\n//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js\n/script\n\n\nscript src=\nisotope-ui.js\n/script\n \n!-- this is it, THIS. IS. IT. --\n\n\n\n\n\nExample\n\n\nA simple example using a single UI group;\n\n\nh3\nSingle select container\n/h3\n\n\ndiv class=\nb-filter-ui-container\n\n    \na class=\nb-button b-filter\n data-filter=\nthing\nthing\n/a\n\n    \na class=\nb-button b-filter\n data-filter=\npotato\npotato\n/a\n\n    \na class=\nb-button b-filter\n data-filter=\ncar\ncar\n/a\n\n\n/div\n\n\n\n\n\nBuilding Stuff\n\n\nA detailed usage guide is available in the next section, \nUsing isotope-ui", 
+            "text": "isotope-ui\n\n\nHTML-configurable boolean filter UIs using \nIsotope\n\n\nRequires:\n\n JQuery (http://jquery.com/)\n\n Isotope (http://isotope.metafizzy.co/)\n\n\nGetting Started\n\n\nCopy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.\n\n\nLike so ~\n\n\nscript src=\n//code.jquery.com/jquery-2.2.3.min.js\n/script\n\n\nscript src=\n//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js\n/script\n\n\nscript src=\nisotope-ui.js\n/script\n \n!-- this is it, THIS. IS. IT. --\n\n\n\n\n\nExample\n\n\nA simple example using a single UI group;\n\n\ndiv class=\nb-filter-ui\n\n    \nh3\nSingle select container\n/h3\n\n    \ndiv class=\nb-filter-ui-container\n\n        \na class=\nb-button b-filter\n data-filter=\nthing\nthing\n/a\n\n        \na class=\nb-button b-filter\n data-filter=\npotato\npotato\n/a\n\n        \na class=\nb-button b-filter\n data-filter=\ncar\ncar\n/a\n\n    \n/div\n\n\n/div\n\n\n\n\n\nBuilding Stuff\n\n\nA detailed usage guide is available in the next section, \nUsing isotope-ui", 
             "title": "Getting Started"
         }, 
         {
@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/#example", 
-            "text": "A simple example using a single UI group;  h3 Single select container /h3  div class= b-filter-ui-container \n     a class= b-button b-filter  data-filter= thing thing /a \n     a class= b-button b-filter  data-filter= potato potato /a \n     a class= b-button b-filter  data-filter= car car /a  /div", 
+            "text": "A simple example using a single UI group;  div class= b-filter-ui \n     h3 Single select container /h3 \n     div class= b-filter-ui-container \n         a class= b-button b-filter  data-filter= thing thing /a \n         a class= b-button b-filter  data-filter= potato potato /a \n         a class= b-button b-filter  data-filter= car car /a \n     /div  /div", 
             "title": "Example"
         }, 
         {
