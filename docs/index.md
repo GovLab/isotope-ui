@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+# isotope-ui
+HTML-configurable boolean filter UIs using [Isotope](http://isotope.metafizzy.co/)
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Requires:
+* JQuery (http://jquery.com/)
+* Isotope (http://isotope.metafizzy.co/)
 
-## Commands
+## Getting Started
+Copy isotope-ui.js into your project and link it, after linking the above two libraries previously in the script load order.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Like so ~
+```html
+<script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="isotope-ui.js"></script> <!-- this is it, THIS. IS. IT. -->
+```
 
-## Project layout
+## Example
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+A simple example using a single UI group;
+
+```
+example
+```
